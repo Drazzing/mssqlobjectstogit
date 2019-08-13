@@ -21,6 +21,12 @@ Function LogWrite
 		   [string]$logstring)
 		   
 	if (!(Test-Path $logLocation))
-	{ $null = new-item -type directory -path $logLocation }
+	{
+        if(!(Test-Path (Split-Path -Path $logLocation)))
+        {
+            $null = new-item -type directory -path (Split-Path -Path $logLocation)
+        }
+        $null = new-item -type file -path $logLocation
+    }
    	Add-content $logLocation -value   ((get-date -Format "yyyy-MM-dd HH:mm:ss") + " - " + $logstring) 
 }
