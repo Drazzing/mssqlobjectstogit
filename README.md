@@ -1,8 +1,8 @@
 # Change Tracking of MS SQL Objects
 
-The following scripts will help automate and track changes within your MS SQL Instances across development teams. It will give you a version history over time of what happen to each object.
+The following scripts will help automate and track changes within your MS SQL Instances across development teams. It will give you a version history over time of what happened to each object.
 
-It can be a nice starting point in getting your classic development teams using automated DevOpps practices.
+It can be a nice starting point in getting your classic development teams using automated DevOps practices.
 
 The solution will answer the following two questions over time without buying expensive third-party tools:
 
